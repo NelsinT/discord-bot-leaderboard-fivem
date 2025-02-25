@@ -28,9 +28,11 @@ Create a .env file in the root directory and fill it with your bot and database 
 DISCORD_TOKEN=your_token_here
 DB_HOST=your_host
 DB_USER=your_user
-DB_PASSWORD=your_password
+DB_PASSWORD= # if u dont have just put ""
 DB_NAME=your_database
 CHANNEL_ID=channel_id
+DB_TABLE=ffa #example
+DB_COLUMNS=kills_deagle,kills_rifle,kills_smg,kills_all #example
 
 4. Run the Bot
 
