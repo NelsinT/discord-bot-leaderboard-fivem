@@ -1,4 +1,4 @@
-#Discord Bot - Kill Leaderboard
+LEADERBOARD 📢
 
 This bot displays a kill ranking for different categories in a Discord channel, using data from a MySQL database.
 
