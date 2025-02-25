@@ -1,51 +1,73 @@
-LEADERBOARD 📢
+Discord Bot Leaderboard
 
-This bot displays a kill ranking for different categories in a Discord channel, using data from a MySQL database.
+This is a Discord bot that fetches and displays a leaderboard from a MySQL database. The bot periodically updates the leaderboard message in a specified channel.
+
+Features
+
+Connects to a MySQL database to fetch leaderboard stats.
+
+Displays top 3 players for each category in an embedded message.
+
+Automatically updates the leaderboard at set intervals.
 
 Requirements
 
-Node.js (latest version recommended)
+Node.js
 
-A bot configured in the Discord Developer Portal
+A MySQL database
 
-A configured MySQL database
+A Discord bot token
 
-Installation and Setup
+A .env file (without a specific name) with the necessary credentials
 
-1. Clone the Repository
+Installation
 
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+Clone this repository:
 
-2. Install Dependencies
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+
+Install dependencies:
 
 npm install
 
-3. Configure the .env File
-
-Create a .env file in the root directory and fill it with your bot and database credentials:
+Create a .env file in the root directory and configure it:
 
 DISCORD_TOKEN=your_token_here
 DB_HOST=your_host
 DB_USER=your_user
-DB_PASSWORD= # if u dont have just put ""
+DB_PASSWORD=your_password
 DB_NAME=your_database
 CHANNEL_ID=channel_id
-DB_TABLE=ffa #example
-DB_COLUMNS=kills_deagle,kills_rifle,kills_smg,kills_all #example
+DB_TABLE=ffa
+DB_COLUMNS=kills_deagle,kills_rifle,kills_smg,kills_all
 
-4. Run the Bot
+Note: The .env file should not have a specific name; it must simply be named .env.
+
+Run the bot:
 
 node bot.js
 
-The bot will start and automatically update the leaderboard every hour.
+Usage
 
-Features
+Ensure your MySQL database is set up and accessible.
 
-Displays the kill ranking for different categories (Deagle, Rifle, SMG, All)
+Invite the bot to your Discord server and give it necessary permissions.
 
-Automatic leaderboard updates
+The bot will fetch and update the leaderboard in the specified channel automatically.
 
-Contact
+Configuration
 
-If you have any questions or need help, open an issue in the repository.
+Modify the .env file to adjust settings such as the database credentials, leaderboard table, and update intervals.
+
+License
+
+This project is licensed under the MIT License.
+
+Contributing
+
+Feel free to fork the repository and submit pull requests.
+
+Issues
+
+If you encounter any problems, open an issue on GitHub.
